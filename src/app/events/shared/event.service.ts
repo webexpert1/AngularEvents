@@ -317,5 +317,9 @@ constructor() { }
   getEvents() {
     return this.EVENTS;
   }
+
+  getEvent(id: number) {
+   return  this.EVENTS.find(x => x.id === id);
+  }
 }
 
