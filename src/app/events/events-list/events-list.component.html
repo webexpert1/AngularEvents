@@ -2,7 +2,7 @@
   <h1>Up comming Angular Events</h1>
   <div class="row">
     <div class="col-md-5"  *ngFor="let event of EVENTS">
-      <app-event-thumbnail [event]="event" #thumbnail></app-event-thumbnail>
+      <app-event-thumbnail [event]="event" #thumbnail (click)="handleEventThumbnaliClick(event.name)"></app-event-thumbnail>
     </div>
   </div>
 
