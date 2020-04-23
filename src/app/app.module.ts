@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import {  appRoutes } from './routes';
 import { Error404Component } from './errors/error-404/error404.component';
 import { EventRouteActivator } from './events/event-detail/event.route.activator';
+import { EventListResolver } from './events/events-list/events-list-resolver.service';
 
 
 
@@ -43,6 +44,7 @@ import { EventRouteActivator } from './events/event-detail/event.route.activator
       EventService,
       ToastrService,
       EventRouteActivator,
+      EventListResolver,
       {
         provide: 'CanDeactivateEventCreate',
         useValue: CheckDirtyState
